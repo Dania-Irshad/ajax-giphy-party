@@ -7,7 +7,7 @@ async function getGif(e) {
     e.preventDefault();
     const search = document.getElementById('search');
     let gif = search.value;
-    const res = await axios.get("http://api.giphy.com/v1/gifs/search", {
+    const res = await axios.get("https://api.giphy.com/v1/gifs/search", {
         params: {
             q: gif,
             api_key: "gKv67Z9I5ZFgLHUmswDNwMw8cqZsmmj6",
